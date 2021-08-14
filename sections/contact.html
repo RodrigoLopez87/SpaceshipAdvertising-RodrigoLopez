@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="grid">
+      <!-- Header -->
+      <!-- se divide en dos partes, a la izquierda el logo y a la derecha el menú -->
+      <header class="header">
+        <div class="brand">
+          <div class="logoContainer">
+            <img
+              class="logoContainer__image"
+              src="../img/logoSpaceshipChico.png"
+              alt="Logo de Spacheship Advertising"
+            />
+          </div>
+          <div class="titleContainer">
+            <h1 class="titleContainer__title">Spacheship Advertising</h1>
+          </div>
+        </div>
+        <nav class="menu">
+          <a href="../index.html" class="menu__item">Inicio </a>
+          <a href="services.html" class="menu__item">Servicios </a>
+          <a href="courses.html" class="menu__item">Cursos </a>
+          <a href="contact.html" class="menu__item">Contacto </a>
+        </nav>
+      </header>
+      <!-- contenido -->
+      <section class="section1"><h2>Contactate con nosotros</h2></section>
+      <section class="section2">
+        <form action="" class="formulario" method="GET">
+          <label for="nombreApellido">Nombre y apellido:</label>
+          <input type="text" name="nombreApellido" />
+
+          <br />
+          <br />
+
+          <label for="email">Email:</label>
+          <input type="email" name="email" />
+
+          <br />
+          <br />
+
+          <label for="sexo">Sexo:</label>
+          <select name="sexo" id="">
+            <option value="Hombre">Hombre</option>
+            <option value="Mujer">Mujer</option>
+          </select>
+
+          <br />
+          <br />
+
+          <label for="interes">Contanos en qué te podemos ayudar:</label>
+          <br />
+          <textarea name="interes" id="" cols="80" rows="10"></textarea>
+
+          <br />
+          <br />
+
+          <label for="newsletter"
+            >Querés recibir información sobre nuestras promociones?</label
+          >
+          <input type="Checkbox" name="newsletter" />
+
+          <br />
+          <br />
+          <br />
+          <br />
+
+          <input type="reset" value="Limpiar formulario" />
+          <input type="submit" value="Enviar" />
+        </form>
+      </section>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer__container">
+          <img
+            class="footer__container__logo"
+            src="../img/logoSpaceshipRedondoChico.png"
+            alt="Logo de Spacheship Advertising"
+          />
+        </div>
+        <div class="footer__container footer__container--modifier">
+          <p class="footer__container__text">
+            Visitanos en nuestras redes sociales!
+          </p>
+        </div>
+        <div class="footer__container">
+          <a href="">
+            <img
+              class="footer__container__socialNetwork"
+              src="../img/facebook.png"
+              alt="Visitanos en Facebook"
+          /></a>
+          <a href=""
+            ><img
+              class="footer__container__socialNetwork"
+              src="../img/instagram.png"
+              alt="Visitanos en Instagram"
+          /></a>
+          <a href=""
+            ><img
+              class="footer__container__socialNetwork"
+              src="../img/twitter.png"
+              alt="Visitanos en Twitter"
+          /></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
