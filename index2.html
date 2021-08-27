@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="styles/index2.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -19,19 +20,26 @@
     <!-- Header -->
       <!-- se divide en dos partes, a la izquierda el logo y a la derecha el menú.... -->
       <header>
-        <div class="container">
-          <div class="dropdown">
-            <button class="btn btn-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-              </svg>
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a href="index.html" class="dropdown-item">Inicio </a></li>
-              <li><a href="sections/services.html" class="dropdown-item">Servicios </a></li>
-              <li><a href="sections/courses.html" class="dropdown-item">Cursos </a></li>
-              <li><a href="sections/contact.html" class="dropdown-item">Contacto </a></li>
-            </ul>
+        <div class="container-fluid">
+          <div class="row ">
+            <div class="col d-flex justify-content-center align-items-end">
+              <p>Spaceship Advertising</p>
+            </div>
+            <nav class="col d-flex justify-content-end align-items-end">
+              <div class="dropdown">
+                <button class="btn btn-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a href="index.html" class="dropdown-item">Inicio </a></li>
+                  <li><a href="sections/services.html" class="dropdown-item">Servicios </a></li>
+                  <li><a href="sections/courses.html" class="dropdown-item">Cursos </a></li>
+                  <li><a href="sections/contact.html" class="dropdown-item">Contacto </a></li>
+                </ul>
+              </div>
+            </nav>
           </div>
         </div>
       </header>
