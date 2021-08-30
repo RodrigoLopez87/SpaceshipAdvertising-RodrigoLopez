@@ -12,17 +12,20 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 500; }
 
+.header {
+  height: 10%; }
+
 .brand {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  justify-content: flex-start;
   width: 100%; }
   .brand__image {
-    height: 50%; }
+    height: 50%;
+    padding-bottom: 2%; }
   .brand__name {
     color: #1f3c88;
-    font-size: 1rem; }
+    font-size: 0.8rem; }
 
 /* menu */
 .menu {
@@ -32,7 +35,7 @@ body {
   align-items: flex-end;
   justify-content: space-between; }
   .menu__item {
-    font-size: 1rem; }
+    font-size: 0.9rem; }
   .menu__item:visited, .menu__item:active, .menu__item:link {
     text-decoration: none;
     color: #1f3c88; }

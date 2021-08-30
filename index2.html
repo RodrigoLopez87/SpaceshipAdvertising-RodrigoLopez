@@ -25,21 +25,21 @@
   <body class="vh-100">
     <!-- Header -->
       <!-- se divide en dos partes, a la izquierda el logo y a la derecha el menú.... -->
-      <header class="header h-25">
+      <header class="header">
         <div class="container h-100">
           <div class="row h-100">
-            <div class="col-6 h-100">
+            <div class="col-8 col-md-6 h-100">
               <div class="brand h-100">
                 <img class="brand__image"
                   src="img/logoSpaceshipChico.png"
                   alt="Logo de Spacheship Advertising"
                 />
-                <h1 class="brand__name mt-1">Spaceship</h1>          
-                <h1 class="brand__name">Advertising</h1>
+                <h1 class="brand__name">&nbsp;&nbsp;&nbsp;&nbsp;Spaceship Advertising</h1>        
               </div>
             </div>
 
-            <nav class="col-6 w100 d-flex d-md-none justify-content-end align-items-end">
+            <!-- Este menú se oculta cuando se llega al width md -->
+            <nav class="col-4 w100 d-flex d-md-none justify-content-end align-items-end">
               <div class="dropdown">
                 <button class="btn" type="button" id="ddMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
@@ -55,6 +55,7 @@
               </div>
             </nav>
 
+            <!-- Este menú figura oculto y se despliega cuando se llega al width md -->
             <div class="menu__container d-none d-md-block col-6">
               <nav class="menu">
                 <a href="index2.html" class="menu__item">Inicio </a>
@@ -68,6 +69,11 @@
           </div>
         </div>
       </header>
+
+      
+
+
+
       <footer></footer>
       
      
