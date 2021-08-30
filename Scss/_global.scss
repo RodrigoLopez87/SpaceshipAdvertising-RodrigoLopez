@@ -8,3 +8,9 @@ html {
   /* 1 rem == 10px */
   font-size: 1.2rem;
 }
+
+body {
+  background-color: $backgroundColorWhite;
+  font-family: $fontFamilyLato;
+  font-weight: 500;
+}
