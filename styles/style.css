@@ -16,6 +16,30 @@ body {
 .header {
   height: 10%; }
 
+.footer {
+  margin-top: 3rem;
+  height: 30%;
+  background-color: #1f3c88; }
+  .footer__container, .footer__container--forText, .footer__container--forSocialNetfork {
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .footer__container .footer__logo, .footer__container--forText .footer__logo, .footer__container--forSocialNetfork .footer__logo {
+      height: 70%; }
+  .footer__container--forText {
+    height: 40%;
+    align-items: flex-end; }
+    .footer__container--forText .footer__text {
+      color: #f6f5f5;
+      font-size: 0.8rem;
+      font-weight: 300; }
+  .footer__container--forSocialNetfork {
+    align-items: flex-start; }
+    .footer__container--forSocialNetfork .footer__socialNetwork {
+      height: 1rem;
+      margin: 0rem 1rem; }
+
 .brand {
   display: flex;
   align-items: flex-end;
