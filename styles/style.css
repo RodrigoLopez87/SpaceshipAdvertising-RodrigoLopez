@@ -54,3 +54,26 @@ body {
     .hero__box__title {
       font-size: 1.32rem;
       color: black; }
+
+.adn {
+  margin-top: 2rem; }
+  .adn .adn__titleContainer {
+    display: flex;
+    justify-content: center; }
+    .adn .adn__titleContainer .adn__title {
+      font-size: 1.5rem; }
+  .adn .adn__itemContainer {
+    display: flex;
+    justify-content: center; }
+    .adn .adn__itemContainer .adn__item {
+      margin-top: 2rem;
+      height: 12rem;
+      width: 12rem;
+      border-radius: 6rem;
+      background-color: #ff9d76;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .adn .adn__itemContainer .adn__item .adn__text {
+        font-size: 1rem;
+        color: black; }
