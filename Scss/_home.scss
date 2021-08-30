@@ -1,3 +1,5 @@
+// logo y nombre de la empresa
+
 .brand {
   display: flex;
   align-items: flex-end;
@@ -15,7 +17,7 @@
   }
 }
 
-/* menu */
+// menu que se despliega a partir de width md
 
 .menu {
   width: 100%;
@@ -37,5 +39,26 @@
 
   &__item:hover {
     color: #ff9d76;
+  }
+}
+
+// hero y frase
+
+/* sección con el banner */
+
+.hero {
+  background-image: url("../img/bannerMain.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 75%;
+  margin-top: 0.5rem;
+
+  &__box {
+    height: 100%;
+
+    &__title {
+      font-size: $fontSize * 1.1;
+      color: black;
+    }
   }
 }
