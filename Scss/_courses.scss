@@ -1,0 +1,21 @@
+.courses {
+  @extend .sectionBase;
+
+  &__course {
+    margin: 1.5rem 0rem;
+    padding: 0.7rem 0.5rem;
+    background-color: $colorBlue;
+    color: $colorWhite;
+    height: 16rem;
+
+    h2,
+    h4 {
+      font-size: 0.7rem;
+    }
+
+    li {
+      font-weight: 100;
+      font-size: 0.6rem;
+    }
+  }
+}

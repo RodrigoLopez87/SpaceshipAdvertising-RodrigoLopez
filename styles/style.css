@@ -24,7 +24,7 @@ body {
     font-size: 1.2rem;
     color: #f6f5f5; }
 
-.sectionBase, .services {
+.sectionBase, .services, .courses {
   min-height: 50%; }
 
 .footer {
@@ -144,5 +144,18 @@ body {
   .services__service h2 {
     font-size: 0.7rem; }
   .services__service p {
+    font-weight: 100;
+    font-size: 0.6rem; }
+
+.courses__course {
+  margin: 1.5rem 0rem;
+  padding: 0.7rem 0.5rem;
+  background-color: #1f3c88;
+  color: #f6f5f5;
+  height: 16rem; }
+  .courses__course h2,
+  .courses__course h4 {
+    font-size: 0.7rem; }
+  .courses__course li {
     font-weight: 100;
     font-size: 0.6rem; }
