@@ -1,0 +1,20 @@
+.services {
+  @extend .sectionBase;
+
+  &__service {
+    margin: 1.5rem 0rem;
+    padding: 0.7rem 0.5rem;
+    background-color: $colorBlue;
+    color: $colorWhite;
+    height: 11rem;
+
+    h2 {
+      font-size: 0.7rem;
+    }
+
+    p {
+      font-weight: 100;
+      font-size: 0.6rem;
+    }
+  }
+}

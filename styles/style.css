@@ -24,7 +24,7 @@ body {
     font-size: 1.2rem;
     color: #f6f5f5; }
 
-.sectionBase {
+.sectionBase, .services {
   min-height: 50%; }
 
 .footer {
@@ -134,3 +134,15 @@ body {
     border-color: #1f3c88;
     background: #f6f5f5;
     padding: 0.1rem 0rem; }
+
+.services__service {
+  margin: 1.5rem 0rem;
+  padding: 0.7rem 0.5rem;
+  background-color: #1f3c88;
+  color: #f6f5f5;
+  height: 11rem; }
+  .services__service h2 {
+    font-size: 0.7rem; }
+  .services__service p {
+    font-weight: 100;
+    font-size: 0.6rem; }
