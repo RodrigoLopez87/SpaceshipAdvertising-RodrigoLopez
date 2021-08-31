@@ -5,7 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto</title>
-    <link rel="stylesheet" href="../styles/contact.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,111 +19,191 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <div class="grid">
-      <!-- Header -->
-      <!-- se divide en dos partes, a la izquierda el logo y a la derecha el menú -->
-      <header class="header">
-        <div class="brand">
-          <div class="logoContainer">
+  <body class="vh-100">
+    <!-- Header -->
+    <!-- se divide en dos partes, a la izquierda el logo y a la derecha el menú.... -->
+    <header class="header">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-8 col-md-6 h-100">
+            <div class="brand h-100">
+              <img
+                class="brand__image"
+                src="../img/logoSpaceshipChico.png"
+                alt="Logo de Spacheship Advertising"
+              />
+              <h1 class="brand__name">
+                &nbsp;&nbsp;&nbsp;&nbsp;Spaceship Advertising
+              </h1>
+            </div>
+          </div>
+
+          <!-- Este menú se oculta cuando se llega al width md -->
+          <nav
+            class="
+              col-4
+              w100
+              d-flex d-md-none
+              justify-content-end
+              align-items-end
+            "
+          >
+            <div class="dropdown">
+              <button
+                class="btn"
+                type="button"
+                id="ddMenuButton"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-list"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                  />
+                </svg>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="ddMenuButton">
+                <li>
+                  <a href="../index.html" class="dropdown-item">Inicio </a>
+                </li>
+                <li>
+                  <a href="services.html" class="dropdown-item">Servicios </a>
+                </li>
+                <li>
+                  <a href="courses.html" class="dropdown-item">Cursos </a>
+                </li>
+                <li>
+                  <a href="contact.html" class="dropdown-item">Contacto </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <!-- Este menú figura oculto y se despliega cuando se llega al width md -->
+          <div class="d-none d-md-block col-6">
+            <nav class="menu">
+              <a href="../index.html" class="menu__item">Inicio </a>
+              <a href="sections/services.html" class="menu__item">Servicios </a>
+              <a href="sections/courses.html" class="menu__item">Cursos </a>
+              <a href="sections/contact.html" class="menu__item">Contacto </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="title d-flex align-items-center justify-content-center">
+      <h2 class="title__text">Contactate con nosotros</h2>
+    </section>
+
+    <section class="sectionForm">
+      <div class="container my-5">
+        <div class="row">
+          <p class="offset-2 col-8">
+            ¿Querés consultar sobre algún servicio en particular? ¿Tenés dudas
+            sobre los cursos online? ¿Querés saber cómo podemos ayudarte a
+            mejorar tu proyecto? ¡Escribinos!
+          </p>
+        </div>
+      </div>
+
+      <form action="" method="GET">
+        <div class="container">
+          <div class="row my-2">
+            <input
+              type="text"
+              name="nameLastName"
+              placeholder="Nombre y apellido"
+              class="offset-2 col-8"
+            />
+          </div>
+          <div class="row my-2">
+            <input
+              type="email"
+              name="email"
+              placeholder="e-mail"
+              class="offset-2 col-8"
+            />
+          </div>
+          <div class="row my-2">
+            <input
+              type="text"
+              name="subject"
+              placeholder="Asunto"
+              class="offset-2 col-8"
+            />
+          </div>
+          <div class="row my-2">
+            <textarea
+              name="interes"
+              id=""
+              cols="80"
+              rows="4"
+              placeholder="Mensaje"
+              class="offset-2 col-8"
+            ></textarea>
+          </div>
+          <div class="row my-2">
+            <div class="offset-2 col-8 d-flex justify-content-end">
+              <button type="submit" class="btn">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="footer__containerLogo">
             <img
-              class="logoContainer__image"
-              src="../img/logoSpaceshipChico.png"
+              class="footer__logo"
+              src="../img/logoSpaceshipRedondoChico.png"
               alt="Logo de Spacheship Advertising"
             />
           </div>
-          <div class="titleContainer">
-            <h1 class="titleContainer__title">Spacheship Advertising</h1>
+
+          <div class="footer__containerInvitation">
+            <p class="footer__text">Visitanos en nuestras redes sociales!</p>
+          </div>
+
+          <div class="footer__containerSocialNetwork">
+            <a href="#">
+              <img
+                class="footer__socialNetwork"
+                src="../img/facebook.png"
+                alt="Visitanos en Facebook"
+            /></a>
+            <a href="#"
+              ><img
+                class="footer__socialNetwork"
+                src="../img/instagram.png"
+                alt="Visitanos en Instagram"
+            /></a>
+            <a href="#"
+              ><img
+                class="footer__socialNetwork"
+                src="../img/twitter.png"
+                alt="Visitanos en Twitter"
+            /></a>
           </div>
         </div>
-        <nav class="menu">
-          <a href="../index.html" class="menu__item">Inicio </a>
-          <a href="services.html" class="menu__item">Servicios </a>
-          <a href="courses.html" class="menu__item">Cursos </a>
-          <a href="contact.html" class="menu__item">Contacto </a>
-        </nav>
-      </header>
-      <!-- contenido -->
-      <section class="section1"><h2>Contactate con nosotros</h2></section>
-      <section class="section2">
-        <form action="" class="formulario" method="GET">
-          <label for="nombreApellido">Nombre y apellido:</label>
-          <input type="text" name="nombreApellido" />
+      </div>
+    </footer>
 
-          <br />
-          <br />
-
-          <label for="email">Email:</label>
-          <input type="email" name="email" />
-
-          <br />
-          <br />
-
-          <label for="sexo">Sexo:</label>
-          <select name="sexo" id="">
-            <option value="Hombre">Hombre</option>
-            <option value="Mujer">Mujer</option>
-          </select>
-
-          <br />
-          <br />
-
-          <label for="interes">Contanos en qué te podemos ayudar:</label>
-          <br />
-          <textarea name="interes" id="" cols="80" rows="10"></textarea>
-
-          <br />
-          <br />
-
-          <label for="newsletter"
-            >Querés recibir información sobre nuestras promociones?</label
-          >
-          <input type="Checkbox" name="newsletter" />
-
-          <br />
-          <br />
-          <br />
-          <br />
-
-          <input type="reset" value="Limpiar formulario" />
-          <input type="submit" value="Enviar" />
-        </form>
-      </section>
-      <!-- Footer -->
-      <footer class="footer">
-        <div class="footer__container">
-          <img
-            class="footer__container__logo"
-            src="../img/logoSpaceshipRedondoChico.png"
-            alt="Logo de Spacheship Advertising"
-          />
-        </div>
-        <div class="footer__container footer__container--modifier">
-          <p class="footer__container__text">
-            Visitanos en nuestras redes sociales!
-          </p>
-        </div>
-        <div class="footer__container">
-          <a href="">
-            <img
-              class="footer__container__socialNetwork"
-              src="../img/facebook.png"
-              alt="Visitanos en Facebook"
-          /></a>
-          <a href=""
-            ><img
-              class="footer__container__socialNetwork"
-              src="../img/instagram.png"
-              alt="Visitanos en Instagram"
-          /></a>
-          <a href=""
-            ><img
-              class="footer__container__socialNetwork"
-              src="../img/twitter.png"
-              alt="Visitanos en Twitter"
-          /></a>
-        </div>
-      </footer>
-    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
