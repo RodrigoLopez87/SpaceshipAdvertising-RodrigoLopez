@@ -2,6 +2,23 @@
   height: 10%;
 }
 
+//titulo que se aplica a contacto, servicios y cursos
+.title {
+  height: 6rem;
+  background-color: $colorOrange;
+  margin-top: 1rem;
+
+  &__text {
+    font-size: 1.2rem;
+    color: $colorWhite;
+  }
+}
+
+//seccion que se aplica a contacto, servicios y cursos
+.sectionBase {
+  min-height: 50%;
+}
+
 $footerContainers: Logo, Invitation, SocialNetwork;
 
 .footer {

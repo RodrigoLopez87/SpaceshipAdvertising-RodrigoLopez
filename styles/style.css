@@ -16,6 +16,17 @@ body {
 .header {
   height: 10%; }
 
+.title {
+  height: 6rem;
+  background-color: #ff9d76;
+  margin-top: 1rem; }
+  .title__text {
+    font-size: 1.2rem;
+    color: #f6f5f5; }
+
+.sectionBase {
+  min-height: 50%; }
+
 .footer {
   margin-top: 3rem;
   height: 25%;
@@ -104,13 +115,22 @@ body {
         font-size: 1rem;
         color: black; }
 
-.title {
-  height: 6rem;
-  background-color: #ff9d76;
-  margin-top: 1rem; }
-  .title__text {
-    font-size: 1.2rem;
-    color: #f6f5f5; }
-
-.sectionForm {
-  min-height: 50%; }
+.formRow {
+  margin: 1.2rem 0rem; }
+  .formRow__btnSend {
+    background: #1f3c88;
+    color: #f6f5f5;
+    width: 5rem;
+    height: 2rem;
+    font-size: 1rem;
+    text-decoration: none;
+    outline: none;
+    border: 0;
+    padding: 0.2rem 0rem; }
+  .formRow__btnSend:hover, .formRow__btnSend:focus {
+    color: #1f3c88;
+    border: 3px;
+    border-style: solid;
+    border-color: #1f3c88;
+    background: #f6f5f5;
+    padding: 0.1rem 0rem; }

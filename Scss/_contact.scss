@@ -1,14 +1,33 @@
-.title {
-  height: 6rem;
-  background-color: $colorOrange;
-  margin-top: 1rem;
+.formRow {
+  margin: 1.2rem 0rem;
 
-  &__text {
-    font-size: 1.2rem;
+  // &__input {
+  //   border-color: $colorBlue;
+  //   border-radius: 0;
+  //   // border: 4px;
+  //   font-weight: 100;
+  // }
+
+  &__btnSend {
+    background: $colorBlue;
     color: $colorWhite;
-  }
-}
+    width: 5rem;
+    height: 2rem;
+    font-size: 1rem;
+    text-decoration: none;
+    outline: none;
+    border: 0;
 
-.sectionForm {
-  min-height: 50%;
+    padding: 0.2rem 0rem;
+  }
+
+  &__btnSend:hover,
+  &__btnSend:focus {
+    color: $colorBlue;
+    border: 3px;
+    border-style: solid;
+    border-color: $colorBlue;
+    background: $colorWhite;
+    padding: 0.1rem 0rem;
+  }
 }
