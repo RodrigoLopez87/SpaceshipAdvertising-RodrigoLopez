@@ -90,7 +90,7 @@
           <!-- Este menú figura oculto y se despliega cuando se llega al width md -->
           <div class="d-none d-md-block col-6">
             <nav class="menu">
-              <a href="../index2.html" class="menu__item">Inicio </a>
+              <a href="../index.html" class="menu__item">Inicio </a>
               <a href="sections/services.html" class="menu__item">Servicios </a>
               <a href="sections/courses.html" class="menu__item">Cursos </a>
               <a href="sections/contact.html" class="menu__item">Contacto </a>
@@ -99,6 +99,66 @@
         </div>
       </div>
     </header>
+
+    <section class="title d-flex align-items-center justify-content-center">
+      <h2 class="title__text">Contactate con nosotros</h2>
+    </section>
+
+    <section>
+      <div class="container my-5">
+        <div class="row">
+          <p class="offset-2 col-8">
+            ¿Querés consultar sobre algún servicio en particular? ¿Tenés dudas
+            sobre los cursos online? ¿Querés saber cómo podemos ayudarte a
+            mejorar tu proyecto? ¡Escribinos!
+          </p>
+        </div>
+      </div>
+
+      <form action="" method="GET">
+        <div class="container">
+          <div class="row my-2">
+            <input
+              type="text"
+              name="nameLastName"
+              placeholder="Nombre y apellido"
+              class="offset-2 col-8"
+            />
+          </div>
+          <div class="row my-2">
+            <input
+              type="email"
+              name="email"
+              placeholder="e-mail"
+              class="offset-2 col-8"
+            />
+          </div>
+          <div class="row my-2">
+            <input
+              type="text"
+              name="subject"
+              placeholder="Asunto"
+              class="offset-2 col-8"
+            />
+          </div>
+          <div class="row my-2">
+            <textarea
+              name="interes"
+              id=""
+              cols="80"
+              rows="4"
+              placeholder="Mensaje"
+              class="offset-2 col-8"
+            ></textarea>
+          </div>
+          <div class="row my-2">
+            <div class="offset-2 col-8 d-flex justify-content-end">
+              <button type="submit" class="btn">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">

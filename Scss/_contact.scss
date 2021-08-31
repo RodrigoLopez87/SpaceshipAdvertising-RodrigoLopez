@@ -1,0 +1,10 @@
+.title {
+  height: 6rem;
+  background-color: $colorOrange;
+  margin-top: 1rem;
+
+  &__text {
+    font-size: 1.2rem;
+    color: $colorWhite;
+  }
+}

@@ -101,3 +101,11 @@ body {
       .adn .adn__itemContainer .adn__item .adn__text {
         font-size: 1rem;
         color: black; }
+
+.title {
+  height: 6rem;
+  background-color: #ff9d76;
+  margin-top: 1rem; }
+  .title__text {
+    font-size: 1.2rem;
+    color: #f6f5f5; }
