@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-
 <html lang="es">
-  <!--#region head  -->
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="stylesheet" href="styles/style.css" />
+    <title>Servicios</title>
+    <link rel="stylesheet" href="../styles/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -21,10 +19,10 @@
       rel="stylesheet"
     />
   </head>
-  <!--#endregion -->
   <body class="vh-100">
     <!-- Header -->
     <!-- se divide en dos partes, a la izquierda el logo y a la derecha el menú.... -->
+    <!--#region header  -->
     <header class="header">
       <div class="container h-100">
         <div class="row h-100">
@@ -32,7 +30,7 @@
             <div class="brand h-100">
               <img
                 class="brand__image"
-                src="img/logoSpaceshipChico.png"
+                src="../img/logoSpaceshipChico.png"
                 alt="Logo de Spacheship Advertising"
               />
               <h1 class="brand__name">
@@ -74,21 +72,17 @@
                 </svg>
               </button>
               <ul class="dropdown-menu" aria-labelledby="ddMenuButton">
-                <li><a href="index.html" class="dropdown-item">Inicio </a></li>
                 <li>
-                  <a href="sections/services.html" class="dropdown-item"
-                    >Servicios
-                  </a>
+                  <a href="../index.html" class="dropdown-item">Inicio </a>
                 </li>
                 <li>
-                  <a href="sections/courses.html" class="dropdown-item"
-                    >Cursos
-                  </a>
+                  <a href="services.html" class="dropdown-item">Servicios </a>
                 </li>
                 <li>
-                  <a href="sections/contact.html" class="dropdown-item"
-                    >Contacto
-                  </a>
+                  <a href="courses.html" class="dropdown-item">Cursos </a>
+                </li>
+                <li>
+                  <a href="contact.html" class="dropdown-item">Contacto </a>
                 </li>
               </ul>
             </div>
@@ -97,7 +91,7 @@
           <!-- Este menú figura oculto y se despliega cuando se llega al width md -->
           <div class="d-none d-md-block col-6">
             <nav class="menu">
-              <a href="index2.html" class="menu__item">Inicio </a>
+              <a href="../index2.html" class="menu__item">Inicio </a>
               <a href="sections/services.html" class="menu__item">Servicios </a>
               <a href="sections/courses.html" class="menu__item">Cursos </a>
               <a href="sections/contact.html" class="menu__item">Contacto </a>
@@ -106,50 +100,17 @@
         </div>
       </div>
     </header>
-
-    <!-- Hero con imagen y frase -->
-    <div class="hero">
-      <div
-        class="
-          hero__box
-          container
-          d-flex
-          flex-column
-          justify-content-center
-          align-items-start
-        "
-      >
-        <h2 class="hero__title">Agencia de Marketing Digital.</h2>
-        <h2 class="hero__title">Potenciá tu negocio online.</h2>
-      </div>
-    </div>
-
-    <!-- Seccion con el adn de la empresa -->
-    <section class="adn container">
-      <div class="row">
-        <div class="adn__titleContainer">
-          <h3 class="adn__title">NUESTRO ADN</h3>
-        </div>
-        <div class="adn__itemContainer col-lg-4">
-          <div class="adn__item"><p class="adn__text">CREATIVOS</p></div>
-        </div>
-        <div class="adn__itemContainer col-lg-4">
-          <div class="adn__item"><p class="adn__text">ANALÍTICOS</p></div>
-        </div>
-        <div class="adn__itemContainer col-lg-4">
-          <div class="adn__item"><p class="adn__text">EDUCADORES</p></div>
-        </div>
-      </div>
-    </section>
+    <!--#endregion -->
 
     <!-- Footer -->
+    <!--#region footer  -->
     <footer class="footer">
       <div class="container h-100">
         <div class="row h-100">
           <div class="footer__container">
             <img
               class="footer__logo"
-              src="img/logoSpaceshipRedondoChico.png"
+              src="../img/logoSpaceshipRedondoChico.png"
               alt="Logo de Spacheship Advertising"
             />
           </div>
@@ -162,26 +123,26 @@
             <a href="#">
               <img
                 class="footer__socialNetwork"
-                src="img/facebook.png"
+                src="../img/facebook.png"
                 alt="Visitanos en Facebook"
             /></a>
             <a href="#"
               ><img
                 class="footer__socialNetwork"
-                src="img/instagram.png"
+                src="../img/instagram.png"
                 alt="Visitanos en Instagram"
             /></a>
             <a href="#"
               ><img
                 class="footer__socialNetwork"
-                src="img/twitter.png"
+                src="../img/twitter.png"
                 alt="Visitanos en Twitter"
             /></a>
           </div>
         </div>
       </div>
     </footer>
-
+    <!--#endregion -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
