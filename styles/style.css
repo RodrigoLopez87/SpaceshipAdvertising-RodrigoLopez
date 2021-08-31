@@ -18,25 +18,27 @@ body {
 
 .footer {
   margin-top: 3rem;
-  height: 30%;
+  height: 25%;
   background-color: #1f3c88; }
-  .footer__container, .footer__container--forText, .footer__container--forSocialNetfork {
-    height: 30%;
+  .footer .footer__containerBase, .footer .footer__containerLogo, .footer .footer__containerInvitation, .footer .footer__containerSocialNetwork {
     display: flex;
-    align-items: center;
     justify-content: center; }
-    .footer__container .footer__logo, .footer__container--forText .footer__logo, .footer__container--forSocialNetfork .footer__logo {
+  .footer .footer__containerLogo {
+    height: 30%;
+    align-items: center; }
+    .footer .footer__containerLogo .footer__logo {
       height: 70%; }
-  .footer__container--forText {
+  .footer .footer__containerInvitation {
     height: 40%;
     align-items: flex-end; }
-    .footer__container--forText .footer__text {
+    .footer .footer__containerInvitation .footer__text {
       color: #f6f5f5;
       font-size: 0.8rem;
       font-weight: 300; }
-  .footer__container--forSocialNetfork {
+  .footer .footer__containerSocialNetwork {
+    height: 30%;
     align-items: flex-start; }
-    .footer__container--forSocialNetfork .footer__socialNetwork {
+    .footer .footer__containerSocialNetwork .footer__socialNetwork {
       height: 1rem;
       margin: 0rem 1rem; }
 
@@ -109,3 +111,6 @@ body {
   .title__text {
     font-size: 1.2rem;
     color: #f6f5f5; }
+
+.sectionForm {
+  min-height: 50%; }

@@ -2,41 +2,48 @@
   height: 10%;
 }
 
+$footerContainers: Logo, Invitation, SocialNetwork;
+
 .footer {
   margin-top: 3rem;
-  height: 30%;
+  height: 25%;
   background-color: $colorBlue;
 
-  &__container {
-    height: 30%;
+  .footer__containerBase {
     display: flex;
-    align-items: center;
     justify-content: center;
-
-    .footer__logo {
-      height: 70%;
-    }
   }
 
-  &__container--forText {
-    @extend .footer__container;
-    height: 40%;
-    align-items: flex-end;
+  //se utiliza el containerBase para darle justificacion centrada a cada uno de los contenedores, y cada uno tiene sus características propias
+  @each $part in $footerContainers {
+    .footer__container#{$part} {
+      @extend .footer__containerBase;
 
-    .footer__text {
-      color: #f6f5f5;
-      font-size: 0.8rem;
-      font-weight: 300;
-    }
-  }
+      @if $part == Logo {
+        height: 30%;
+        align-items: center;
 
-  &__container--forSocialNetfork {
-    @extend .footer__container;
-    align-items: flex-start;
+        .footer__logo {
+          height: 70%;
+        }
+      } @else if $part == Invitation {
+        height: 40%;
+        align-items: flex-end;
 
-    .footer__socialNetwork {
-      height: 1rem;
-      margin: 0rem 1rem;
+        .footer__text {
+          color: #f6f5f5;
+          font-size: 0.8rem;
+          font-weight: 300;
+        }
+      } @else {
+        height: 30%;
+        align-items: flex-start;
+
+        .footer__socialNetwork {
+          height: 1rem;
+          margin: 0rem 1rem;
+        }
+      }
     }
   }
 }
